@@ -8,8 +8,17 @@ This repository houses the Helm chart configurations for deploying the assorted 
     - Running version of K3s (as this has only beentested on a k3s cluster henceh the nodePort bits)
 - Helm installed and configured
 
-## Repository Structure
+### Review the Repositories for the Various Containers in Use
 
+| Container | Repository Link |
+|-----------|-----------------|
+| Python    | [Python Container](https://github.com/bmorri13/python_multistage_starwars_api_wrapper) |
+| Go        | [Go Container](https://github.com/bmorri13/go_multistage_starwars_api_wrapper) |
+| Node      | [Node Container](https://github.com/bmorri13/node_multistage_starwars_api_wrapper) |
+
+
+
+### File Structure
 ```bash
 starwars_api_helm_charts/
 ├── go_starwars_api_helm/
