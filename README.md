@@ -16,7 +16,7 @@ This repository houses the Helm chart configurations for deploying the assorted 
 | Go        | [Go Container](https://github.com/bmorri13/go_multistage_starwars_api_wrapper) |
 | Node      | [Node Container](https://github.com/bmorri13/node_multistage_starwars_api_wrapper) |
 
-> ⚠️ **Note:** As of the latest update, these images are based on the [Chainguard base images](https://edu.chainguard.dev/chainguard/chainguard-images/) and deployed to [DockerHub Container Registry](https://hub.docker.com/repositories/bmo75)
+> ⚠️ **Note:** As of the latest update to this repo, these images are based on the [Chainguard base images](https://edu.chainguard.dev/chainguard/chainguard-images/) and deployed to [DockerHub Container Registry](https://hub.docker.com/repositories/bmo75)
 
 
 
