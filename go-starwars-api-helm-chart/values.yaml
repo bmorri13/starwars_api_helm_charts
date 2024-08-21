@@ -1,0 +1,22 @@
+replicaCount: 3
+
+namespace: go-starwars-api
+
+image:
+  repository: bmo75/node-starwars-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5002
+  nodePort: 30003
+
+livenessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 10
+
+readinessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 10

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: go-starwars-api
+description: Helm chart for deploying the Go Star Wars API
+version: 0.1.0
+appVersion: "1.0.0"

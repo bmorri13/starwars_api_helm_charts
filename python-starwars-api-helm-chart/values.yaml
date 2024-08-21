@@ -1,0 +1,22 @@
+replicaCount: 3
+
+namespace: python-starwars-api
+
+image:
+  repository: bmo75/python-starwars-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5002
+  nodePort: 30002
+
+livenessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 10
+
+readinessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 10
