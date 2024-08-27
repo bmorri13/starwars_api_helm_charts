@@ -1,9 +1,9 @@
 replicaCount: 3
 
-namespace: node-starwars-api
+namespace: fastapi-starwars-api
 
 image:
-  repository: bmo75/node-starwars-api
+  repository: bmo75/fastapi-starwars-api
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -11,7 +11,7 @@ service:
   type: NodePort
   port: 80
   targetPort: 5002
-  nodePort: 30004
+  nodePort: 30005
 
 livenessProbe:
   initialDelaySeconds: 10

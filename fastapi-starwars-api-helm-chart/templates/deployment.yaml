@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-starwars-api
+  name: fastapi-starwars-api
   namespace: {{ .Values.namespace }}
   labels:
-    app: node-starwars-api
+    app: fastapi-starwars-api
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: node-starwars-api
+      app: fastapi-starwars-api
   template:
     metadata:
       labels:
-        app: node-starwars-api
+        app: fastapi-starwars-api
     spec:
       containers:
-      - name: node-starwars-api
+      - name: fastapi-starwars-api
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:

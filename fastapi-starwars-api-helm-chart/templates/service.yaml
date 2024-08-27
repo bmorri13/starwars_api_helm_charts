@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: node-starwars-api
+  name: fastapi-starwars-api
   namespace: {{ .Values.namespace }}
 spec:
   selector:
-    app: node-starwars-api
+    app: fastapi-starwars-api
   ports:
     - protocol: TCP
       port: {{ .Values.service.port }}
