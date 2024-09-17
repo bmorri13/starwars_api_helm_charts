@@ -63,10 +63,10 @@ starwars_api_helm_charts/
 To deploy the API wrappers using Helm, run the following commands:
 
 ```bash
-helm install python-starwars-api ./python-starwars-api-helm --create-namespace
-helm install go-starwars-api ./go-starwars-api-helm --create-namespace
-helm install node-starwars-api ./node-starwars-api-helm --create-namespace
-helm install fastapi-starwars-api ./fastapi-starwars-api-helm --create-namespace
+helm install python-starwars-api ./python-starwars-api-helm-chart --create-namespace
+helm install go-starwars-api ./go-starwars-api-helm-chart --create-namespace
+helm install node-starwars-api ./node-starwars-api-helm-chart --create-namespace
+helm install fastapi-starwars-api ./fastapi-starwars-api-helm-chart --create-namespace
 ```
 
 - These commands will create the required namespaces and deploy the API wrappers in their respective namespaces (python-starwars-api, go-starwars-api, and node-starwars-api).
